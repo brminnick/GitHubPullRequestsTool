@@ -7,7 +7,7 @@ namespace GitHubPullRequestsTool
         public GitHubToken(string access_token, string token_type) =>
             (AccessToken, TokenType) = (access_token, token_type);
 
-        public static GitHubToken Empty { get; } = new GitHubToken(string.Empty, string.Empty, string.Empty);
+        public static GitHubToken Empty { get; } = new GitHubToken(string.Empty, string.Empty);
 
         [JsonProperty("access_token")]
         public string AccessToken { get; }
